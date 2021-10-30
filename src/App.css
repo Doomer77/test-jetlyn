@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.user-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(141, 141, 141);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.user-box__message {
+    color: rgb(255, 119, 56);
+}
+
+.user-box__timestamp {
+    color: rgb(0, 174, 255);
+}
+
+.loader-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(12, 45, 71);
+    border-color: rgb(12, 45, 71) transparent rgb(12, 45, 71) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    margin: 10px 0px;
+    padding: 12px;
+    color: #d8000c;
+    background-color: #ffd2d2;
+    margin: 10px 22px;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.button-none {
+    display: none;
+}
